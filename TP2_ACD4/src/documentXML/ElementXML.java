@@ -29,4 +29,6 @@ public abstract class ElementXML {
   public abstract String getValeur();
 
   public abstract void setValeur(String valeur);
+
+  public abstract void afficher();
 }

@@ -10,7 +10,6 @@ import java.util.List;
 
 public class ElementAdapte
     implements Element {
-
 // ------------------------------ FIELDS ------------------------------
 
   protected ElementXMLCompose adapte;
@@ -34,9 +33,9 @@ public class ElementAdapte
 
   public ElementXML getPremierEnfantAvecTag(String tag) {
     List<ElementXML> enfants = adapte.getElementsEnfants();
-    for (ElementXML elt : enfants) {
-      if (elt.getTag().equals(tag))
-        return elt;
+    for (ElementXML enfant : enfants) {
+      if (enfant.getTag().equals(tag))
+        return enfant;
     }
     return null;
   }

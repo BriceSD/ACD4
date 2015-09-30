@@ -1,34 +1,36 @@
 package XML;
 
-import  java.util.List;
+import java.util.List;
 
-public  class  ElementAdapter  implements  Element 
+public class ElementAdapter
+    implements Element
 {
-	
-	
-	protected  ElementXMLCompose  adapte;
-	
+
+
+  protected  ElementXMLCompose  adapte;
+
 	public  ElementAdapter(ElementXMLCompose  adapte)
 	{
 		this.adapte = adapte;
 	}
-	
-	public  int  getNombreEnfants () {
-		return  adapte.getElementsEnfants().size();
+
+
+
+  public int getNombreEnfants() {
+    return  adapte.getElementsEnfants().size();
 	}
-	
-	public  ElementXML  getEnfant(int  index)
+
+  public  ElementXML  getEnfant(int  index)
 	{
 		List <ElementXML > enfants = adapte.getElementsEnfants();
 		return  enfants.get(index);
 	}
-	
-	public  ElementXML  getCompar(String  tag)
+
+  public  ElementXML  getCompar(String  tag)
 	{
 		List <ElementXML > enfants = adapte.getElementsEnfants ();
 		//foreach
-		for (ElementXML  nom : enfants) 
-		{
+    for (ElementXML nom : enfants) {
 				if (nom.getTag().equals(tag))
 			return  nom;
 		}

@@ -38,4 +38,12 @@ public class ElementXMLCompose
 
   public void setValeur(String valeur) {
   }
+
+  public void afficher() {
+    System.out.println("<" + this.getTag() + ">");
+    for (ElementXML enfant : enfants) {
+      enfant.afficher();
+    }
+    System.out.println("</" + this.getTag() + ">");
+  }
 }

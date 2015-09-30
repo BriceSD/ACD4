@@ -31,4 +31,10 @@ public class ElementXMLSimple
   public void setValeur(String valeur) {
     this.valeur = valeur;
   }
+
+  public void afficher() {
+    System.out.println(
+        "<" + this.getTag() + ">  " + this.getValeur() + "  </" + this.getTag()
+            + ">");
+  }
 }
