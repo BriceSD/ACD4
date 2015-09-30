@@ -17,6 +17,6 @@ public class Thon
   }
 
   public String afficheDescription() {
-    return super.afficheDescription() + ", Thon";
+    return super.afficheDescription() + ", thon";
   }
 }

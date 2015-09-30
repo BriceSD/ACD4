@@ -13,6 +13,6 @@ public class PizzaFourreeFromage
   }
 
   public double calculePrix() {
-    return 5.99;
+    return 4.99;
   }
 }
