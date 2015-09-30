@@ -17,6 +17,6 @@ public class OliveNoire
   }
 
   public String afficheDescription() {
-    return super.afficheDescription() + ", Olives  noires";
+    return super.afficheDescription() + ", olives  noires";
   }
 }

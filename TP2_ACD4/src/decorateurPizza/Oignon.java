@@ -17,6 +17,6 @@ public class Oignon
   }
 
   public String afficheDescription() {
-    return super.afficheDescription() + ", Oignons";
+    return super.afficheDescription() + ", oignons";
   }
 }

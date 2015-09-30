@@ -18,6 +18,6 @@ public class Jambon
   }
 
   public String afficheDescription() {
-    return super.afficheDescription() + ", Jambon";
+    return super.afficheDescription() + ", jambon";
   }
 }

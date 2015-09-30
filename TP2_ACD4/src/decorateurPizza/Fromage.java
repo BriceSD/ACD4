@@ -17,6 +17,6 @@ public class Fromage
   }
 
   public String afficheDescription() {
-    return super.afficheDescription() + ", Fromage ";
+    return super.afficheDescription() + ", fromage ";
   }
 }
